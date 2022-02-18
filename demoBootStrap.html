@@ -33,6 +33,48 @@
 
 <body>
 
+  <table class="table table-hover">
+    <thead>
+        <tr><th>Name</th><th>Age</th><th>Gender</th><th>State</th><th>City</th><th>Marital Status</th><th>Sale</th></tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+  <script>
+
+    $('document').ready(function(){
+          
+  
+      
+   var arr = [
+   {name:"Joe",age:34,gender:"Male",state:"California",city:'xyz',mstatus:'single',sale:5000},
+   {name:"Joe",age:34,gender:"Male",state:"California",city:'xyz',mstatus:'single',sale:1000},
+   {name:"Joe",age:34,gender:"Male",state:"California",city:'xyz',mstatus:'single',sale:5030},
+   {name:"Joe",age:34,gender:"Male",state:"California",city:'xyz',mstatus:'single',sale:3000},
+   {name:"Joe",age:34,gender:"Male",state:"California",city:'xyz',mstatus:'single',sale:2000},
+   {name:"Joe",age:34,gender:"Male",state:"California",city:'xyz',mstatus:'single',sale:6000},
+   {name:"Jenny",age:20,gender:"Female",state:"California",city:'XYZ',mstatus:'married',sale:1200}]
+  
+   $.each(arr,function(index,data){
+     
+  $('tbody').append("<tr><td>"+data.name+"</td><td>"+data.age+"</td><td>"+data.gender+"</td><td>"+data.state+"</td><td>"+data.city+"</td><td>"+data.mstatus+"</td><td>"+data.sale+"</td>"); 
+   
+  
+      
+      });
+  
+   
+  
+  
+  
+    });
+  
+  
+  
+  
+      
+  
+     </script>
   <!--
   <div class="container">
     <div class="row">
